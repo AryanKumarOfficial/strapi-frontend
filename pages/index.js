@@ -19,12 +19,6 @@ const Home = ({ blogs }) => {
 
   const builder = ImageUrlBuilder(client)
 
-  useEffect(() => {
-    console.log(builder.image(blogs[0].blogImage).url(), 'url');
-    console.log(builder.image(blogs[1].blogImage).url(), 'url');
-  }, [])
-
-  console.log(blogs, 'blogs');
   return (
     <>
       <Head>
@@ -1100,7 +1094,7 @@ const Home = ({ blogs }) => {
                   {blogs.map((blog) => (
                     <Link key={blog.slug.current} href={`/blog/${blog.slug.current}`} className="shadow">
                       <div
-                        style={{ backgroundImage: `url(${builder.image(blog.blogImage).width(200).url()} | '/assets/img/post-02.png' ) ` }}
+                        style={{ backgroundImage: `url(${builder.image(blog.blogImage).width(200).url()} ) ` }}
                         className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
                       >
                         <span
@@ -1348,7 +1342,7 @@ export async function getStaticProps() {
     useCdn: false
   })
 
-  const blogs = await client.fetch(`*[_type == "blog"]
+  const blogs = await client.fetch(`*[_type == "blog"][0...3]
   `)
   return {
     props: {
