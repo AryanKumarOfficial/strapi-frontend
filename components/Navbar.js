@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
@@ -6,9 +7,9 @@ const Navbar = () => {
             <div class="w-full z-50 top-0 py-3 sm:py-5  bg-[#5540af] ">
                 <div class="container flex items-center justify-between">
                     <div>
-                        <a href="/">
+                        <Link href="/">
                             <img src="/assets/img/logo.svg" class="w-24 lg:w-48" alt="logo image" />
-                        </a>
+                        </Link>
                     </div>
                     <div class=" lg:block">
                         <ul class="flex items-center">
@@ -67,11 +68,10 @@ const Navbar = () => {
 
                             <li class="group pl-6">
 
-                                <a
+                                <Link
                                     href="/#work"
                                     class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                >Work</a
-                                >
+                                >Work</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"
@@ -93,11 +93,10 @@ const Navbar = () => {
 
                             <li class="group pl-6">
 
-                                <a
+                                <Link
                                     href="/#blog"
                                     class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                >Blog</a
-                                >
+                                >Blog</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"
@@ -106,11 +105,10 @@ const Navbar = () => {
 
                             <li class="group pl-6">
 
-                                <a
+                                <Link
                                     href="/#contact"
                                     class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                >Contact</a
-                                >
+                                >Contact</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"
@@ -141,81 +139,74 @@ const Navbar = () => {
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#about"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >About</a
-                            >
+                            >About
+                            </Link>
 
                         </li>
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#services"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >Services</a
-                            >
+                            >Services</Link>
 
                         </li>
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#portfolio"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >Portfolio</a
-                            >
+                            >Portfolio</Link>
 
                         </li>
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#clients"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >Clients</a
-                            >
+                            >Clients</Link>
 
                         </li>
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#work"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >Work</a
-                            >
+                            >Work</Link>
 
                         </li>
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#statistics"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >Statistics</a
-                            >
+                            >Statistics</Link>
 
                         </li>
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#blog"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >Blog</a
-                            >
+                            >Blog</Link>
 
                         </li>
 
                         <li class="py-2">
 
-                            <a
+                            <Link
                                 href="/#contact"
                                 class="pt-0.5 font-header font-semibold uppercase text-white"
-                            >Contact</a
-                            >
+                            >Contact</Link>
 
                         </li>
 

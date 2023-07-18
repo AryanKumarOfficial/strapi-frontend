@@ -4,6 +4,7 @@ import Head from "next/head";
 import { createClient } from "next-sanity";
 import { PortableText } from '@portabletext/react'
 import ImageUrlBuilder from '@sanity/image-url'
+import Link from "next/link";
 
 const BlogPost = ({ blog }) => {
     const router = useRouter();
@@ -99,19 +100,19 @@ const BlogPost = ({ blog }) => {
                 <div class="w-screen z-50 top-0 py-3 sm:py-5  bg-primary ">
                     <div class="container flex items-center justify-between">
                         <div>
-                            <a href="/">
+                            <Link href="/">
                                 <img src="/assets/img/logo.svg" class="w-24 lg:w-48" alt="logo image" />
-                            </a>
+                            </Link>
                         </div>
                         <div class="hidden lg:block">
                             <ul class="flex items-center">
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#about"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >About</a>
+                                    >About</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -120,10 +121,10 @@ const BlogPost = ({ blog }) => {
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#services"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >Services</a>
+                                    >Services</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -132,10 +133,10 @@ const BlogPost = ({ blog }) => {
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#portfolio"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >Portfolio</a>
+                                    >Portfolio</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -144,10 +145,10 @@ const BlogPost = ({ blog }) => {
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#clients"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >Clients</a>
+                                    >Clients</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -156,10 +157,10 @@ const BlogPost = ({ blog }) => {
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#work"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >Work</a>
+                                    >Work</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -168,10 +169,10 @@ const BlogPost = ({ blog }) => {
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#statistics"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >Statistics</a>
+                                    >Statistics</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -180,10 +181,10 @@ const BlogPost = ({ blog }) => {
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#blog"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >Blog</a>
+                                    >Blog</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -192,10 +193,10 @@ const BlogPost = ({ blog }) => {
 
                                 <li class="group pl-6">
 
-                                    <a
+                                    <Link
                                         href="/#contact"
                                         class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                    >Contact</a>
+                                    >Contact</Link>
 
                                     <span
                                         class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
@@ -229,73 +230,73 @@ const BlogPost = ({ blog }) => {
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#about"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >About</a>
+                                >About</Link>
 
                             </li>
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#services"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >Services</a>
+                                >Services</Link>
 
                             </li>
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#portfolio"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >Portfolio</a>
+                                >Portfolio</Link>
 
                             </li>
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#clients"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >Clients</a>
+                                >Clients</Link>
 
                             </li>
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#work"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >Work</a>
+                                >Work</Link>
 
                             </li>
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#statistics"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >Statistics</a>
+                                >Statistics</Link>
 
                             </li>
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#blog"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >Blog</a>
+                                >Blog</Link>
 
                             </li>
 
                             <li class="py-2">
 
-                                <a
+                                <Link
                                     href="/#contact"
                                     class="pt-0.5 font-header font-semibold uppercase text-white"
-                                >Contact</a>
+                                >Contact</Link>
 
                             </li>
 
@@ -343,28 +344,28 @@ const BlogPost = ({ blog }) => {
 
                             </div>
                             <div class="flex pt-10">
-                                <a
+                                <Link
                                     href="/"
                                     class="rounded-xl bg-primary px-4 py-1 font-body font-bold text-white hover:bg-grey-20"
-                                >Frontend</a>
-                                <a
+                                >Frontend</Link>
+                                <Link
                                     href="/"
                                     class="ml-2 block rounded-xl bg-primary px-4 py-1 font-body font-bold text-white hover:bg-grey-20"
-                                >Design</a>
+                                >Design</Link>
                             </div>
                             <div class="mt-10 flex justify-between border-t border-lila py-12">
-                                <a href="/" class="flex items-center">
+                                <Link href="/" class="flex items-center">
                                     <i class="bx bx-left-arrow-alt text-2xl text-primary"></i>
                                     <span
                                         class="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5"
                                     >Previous Post</span>
-                                </a>
-                                <a href="/" class="flex items-center">
+                                </Link>
+                                <Link href="/" class="flex items-center">
                                     <span
                                         class="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5"
                                     >Next Post</span>
                                     <i class="bx bx-right-arrow-alt text-2xl text-primary"></i>
-                                </a>
+                                </Link>
                             </div>
                             <div
                                 class="flex flex-col items-center border-t border-lila py-12 pt-12 md:flex-row md:items-start xl:pb-20"
@@ -386,31 +387,31 @@ const BlogPost = ({ blog }) => {
 
                                     </p>
                                     <div class="flex items-center justify-center pt-5 md:justify-start">
-                                        <a href="/">
+                                        <Link href="/">
                                             <i
                                                 class="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"
                                             ></i>
-                                        </a>
-                                        <a href="/" class="pl-4">
+                                        </Link>
+                                        <Link href="/" class="pl-4">
                                             <i
                                                 class="bx bxl-twitter text-2xl text-primary hover:text-yellow"
                                             ></i>
-                                        </a>
-                                        <a href="/" class="pl-4">
+                                        </Link>
+                                        <Link href="/" class="pl-4">
                                             <i
                                                 class="bx bxl-dribbble text-2xl text-primary hover:text-yellow"
                                             ></i>
-                                        </a>
-                                        <a href="/" class="pl-4">
+                                        </Link>
+                                        <Link href="/" class="pl-4">
                                             <i
                                                 class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
                                             ></i>
-                                        </a>
-                                        <a href="/" class="pl-4">
+                                        </Link>
+                                        <Link href="/" class="pl-4">
                                             <i
                                                 class="bx bxl-instagram text-2xl text-primary hover:text-yellow"
                                             ></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -422,23 +423,23 @@ const BlogPost = ({ blog }) => {
                             © Copyright 2022. All right reserved, ATOM.
                         </p>
                         <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-                            <a href="/">
+                            <Link href="/">
                                 <i
                                     class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
                                 ></i>
-                            </a>
-                            <a href="/" class="pl-4">
+                            </Link>
+                            <Link href="/" class="pl-4">
                                 <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-                            </a>
-                            <a href="/" class="pl-4">
+                            </Link>
+                            <Link href="/" class="pl-4">
                                 <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-                            </a>
-                            <a href="/" class="pl-4">
+                            </Link>
+                            <Link href="/" class="pl-4">
                                 <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-                            </a>
-                            <a href="/" class="pl-4">
+                            </Link>
+                            <Link href="/" class="pl-4">
                                 <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
