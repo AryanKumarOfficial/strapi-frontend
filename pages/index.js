@@ -419,7 +419,7 @@ const Home = ({ blogs }) => {
                   <h1
                     className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
                   >
-                    Hello I'm {profile?.name}!
+                    Hello I&apos;m {profile?.name}!
                   </h1>
                   <div
                     className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
@@ -427,7 +427,7 @@ const Home = ({ blogs }) => {
                     <div
                       className="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
                     >
-                      <p className="font-body text-lg uppercase text-white">Let's connect</p>
+                      <p className="font-body text-lg uppercase text-white">Let&apos;s connect</p>
                       <div className="hidden sm:block">
                         <i className="bx bx-chevron-right text-3xl text-yellow"></i>
                       </div>
@@ -504,7 +504,7 @@ const Home = ({ blogs }) => {
                   <h4
                     className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
                   >
-                    I'm Christy Smith, a Web Designer & Photographer
+                    I&apos;m Christy Smith, a Web Designer & Photographer
                   </h4>
                   <p className="pt-6 font-body leading-relaxed text-grey-20">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -606,7 +606,7 @@ const Home = ({ blogs }) => {
               <h2
                 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
               >
-                Here's what I'm good at
+                Here&apos;s what I&apos;m good at
               </h2>
               <h3
                 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
@@ -773,7 +773,7 @@ const Home = ({ blogs }) => {
               <h3
                 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
               >
-                Here's what I have done with the past
+                Here&apos;s what I have done with the past
               </h3>
 
               <div
@@ -874,7 +874,7 @@ const Home = ({ blogs }) => {
               <h3
                 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
               >
-                Here's what I did before freelancing
+                Here&apos;s what I did before freelancing
               </h3>
 
               <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
@@ -1196,7 +1196,7 @@ const Home = ({ blogs }) => {
               <h2
                 className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
               >
-                Here's a contact form
+                Here&apos;s a contact form
               </h2>
               <h4
                 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
@@ -1295,7 +1295,7 @@ const Home = ({ blogs }) => {
                   className="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl"
                 >
                   Keep <span className="font-bold">up-to-date</span> <br />
-                  with what I'm up to
+                  with what I&apos;m up to
                 </h3>
                 <form className="mt-6 flex flex-col justify-center sm:flex-row">
                   <input

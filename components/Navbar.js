@@ -16,11 +16,10 @@ const Navbar = () => {
 
                             <li class="group pl-6  ">
 
-                                <a
+                                <Link
                                     href="/#about"
                                     class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white "
-                                >About</a
-                                >
+                                >About</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"
@@ -29,11 +28,10 @@ const Navbar = () => {
 
                             <li class="group pl-6">
 
-                                <a
+                                <Link
                                     href="/#services"
                                     class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                >Services</a
-                                >
+                                >Services</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"
@@ -42,11 +40,10 @@ const Navbar = () => {
 
                             <li class="group pl-6">
 
-                                <a
+                                <Link
                                     href="/#portfolio"
                                     class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                >Portfolio</a
-                                >
+                                >Portfolio</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"
@@ -55,11 +52,10 @@ const Navbar = () => {
 
                             <li class="group pl-6">
 
-                                <a
+                                <Link
                                     href="/#clients"
                                     class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                >Clients</a
-                                >
+                                >Clients</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"
@@ -80,11 +76,10 @@ const Navbar = () => {
 
                             <li class="group pl-6">
 
-                                <a
+                                <Link
                                     href="/#statistics"
                                     class="cursor-pointe pt-0.5 font-header font-semibold uppercase text-white"
-                                >Statistics</a
-                                >
+                                >Statistics</Link>
 
                                 <span
                                     class="block h-0.5 w-full bg-transparent group-hover:bg-yellow-500"

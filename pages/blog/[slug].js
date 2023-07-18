@@ -5,6 +5,7 @@ import { createClient } from "next-sanity";
 import { PortableText } from '@portabletext/react'
 import ImageUrlBuilder from '@sanity/image-url'
 import Link from "next/link";
+import Image from "next/image";
 
 const BlogPost = ({ blog }) => {
     const router = useRouter();
@@ -89,7 +90,7 @@ const BlogPost = ({ blog }) => {
                     rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/atom-one-dark.min.css" />
 
-                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+                <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 
                 <script>
                     hljs.highlightAll();
@@ -337,7 +338,7 @@ const BlogPost = ({ blog }) => {
                                     dataset="production"
                                     serializers={{
                                         h1: (props) => <h1 className="text-red-500" {...props} />,
-                                        img: ({ node }) => <Image src={asset.url} width={asset.metadata.dimensions.width} height={node.asset.metadata.dimensions.height} />,
+                                        img: ({ node }) => <Image src={asset.url} width={asset.metadata.dimensions.width} height={node.asset.metadata.dimensions.height} alt="aaa" />,
                                         li: ({ children }) => <li className="text-red-500">{children}</li>,
                                     }}
                                 />
