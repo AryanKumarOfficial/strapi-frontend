@@ -7,10 +7,14 @@ import Link from 'next/link'
 import Script from 'next/script'
 import ImageUrlBuilder from '@sanity/image-url'
 import { useEffect } from 'react'
+import profile from '../profile.json'
+import { Button } from '@nextui-org/react'
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ blogs }) => {
+  const router = useRouter()
   const client = createClient({
     projectId: 'ybwz3gr5',
     dataset: 'production',
@@ -31,7 +35,7 @@ const Home = ({ blogs }) => {
           name="viewport"
         />
 
-        <title>Homepage | Atom Template</title>
+        <title>{profile?.title} | Developer | Programmer</title>
 
         <meta property="og:title" content="Homepage | Atom Template" />
 
@@ -121,20 +125,20 @@ const Home = ({ blogs }) => {
               <div className="container flex items-center justify-between">
                 <div>
                   <Link href="/">
-                    <img src="/assets/img/logo.svg" className="w-24 lg:w-48" alt="logo image" />
+                    <h2 className="text-white text-3xl font-bold">WorkWithAryan</h2>
                   </Link>
                 </div>
                 <div className="hidden lg:block">
                   <ul className="flex items-center">
 
                     <li className="group pl-6">
-                      <a href="#about">
+                      <Link href="#about">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >
                           About
                         </span>
-                      </a>
+                      </Link>
                       <span
                         className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
                       ></span>
@@ -142,13 +146,13 @@ const Home = ({ blogs }) => {
 
                     <li className="group pl-6">
 
-                      <a href="#services">
+                      <Link href="#services">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >
                           Services
                         </span>
-                      </a>
+                      </Link>
 
 
                       <span
@@ -158,13 +162,13 @@ const Home = ({ blogs }) => {
 
                     <li className="group pl-6">
 
-                      <a href="#portfolio">
+                      <Link href="#portfolio">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >
                           Portfolio
                         </span>
-                      </a>
+                      </Link>
 
 
                       <span
@@ -174,13 +178,13 @@ const Home = ({ blogs }) => {
 
                     <li className="group pl-6">
 
-                      <a href="#clients">
+                      <Link href="#clients">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >
                           Clients
                         </span>
-                      </a>
+                      </Link>
 
 
                       <span
@@ -190,13 +194,13 @@ const Home = ({ blogs }) => {
 
                     <li className="group pl-6">
 
-                      <a href="#work">
+                      <Link href="#work">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >
                           Work
                         </span>
-                      </a>
+                      </Link>
 
 
                       <span
@@ -206,13 +210,13 @@ const Home = ({ blogs }) => {
 
                     <li className="group pl-6">
 
-                      <a href="#statistics">
+                      <Link href="#statistics">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >
                           Statistics
                         </span>
-                      </a>
+                      </Link>
 
 
                       <span
@@ -222,13 +226,13 @@ const Home = ({ blogs }) => {
 
                     <li className="group pl-6">
 
-                      <a href="#blog">
+                      <Link href="#blog">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >
                           Blog
                         </span>
-                      </a>
+                      </Link>
 
 
                       <span
@@ -238,14 +242,14 @@ const Home = ({ blogs }) => {
 
                     <li className="group pl-6">
 
-                      <a href="#contact">
+                      <Link href="#contact">
                         <span
                           className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                         >Contact</span>
                         <span
                           className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
                         ></span>
-                      </a>
+                      </Link>
                     </li>
 
                   </ul >
@@ -278,112 +282,112 @@ const Home = ({ blogs }) => {
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#about')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       About
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li>
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#services')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       Services
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li >
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#portfolio')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       Portfolio
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li >
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#clients')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       Clients
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li >
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#work')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       Work
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li >
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#statistics')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       Statistics
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li >
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#blog')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       Blog
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li >
 
                 <li className="py-2">
 
-                  <a href="">
+                  <Link href="">
                     <span
                       onClick={() => triggerMobileNavItem('#contact')}
                       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
                     >
                       Contact
                     </span>
-                  </a>
+                  </Link>
 
 
                 </li >
@@ -407,7 +411,7 @@ const Home = ({ blogs }) => {
               <div className="flex flex-col items-center justify-center lg:flex-row">
                 <div className="rounded-full border-8 border-primary shadow-xl">
                   <img
-                    src="/assets/img/blog-author.jpg"
+                    src={profile?.image}
                     className="h-48 rounded-full sm:h-56"
                     alt="author" />
                 </div>
@@ -415,7 +419,7 @@ const Home = ({ blogs }) => {
                   <h1
                     className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
                   >
-                    Hello I'm Christy Smith!
+                    Hello I'm {profile?.name}!
                   </h1>
                   <div
                     className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
@@ -431,31 +435,57 @@ const Home = ({ blogs }) => {
                     <div
                       className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
                     >
-                      <a href="/">
+                      <Link
+                        href={profile?.facebook}
+                        target="_blank"
+                      >
                         <i
                           className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+
+                      <Link href={profile?.twitter} target="_blank" className="pl-4">
                         <i
                           className="bx bxl-twitter text-2xl text-white hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link
+                        href={profile?.github}
+                        target="_blank"
+                        className="pl-4">
                         <i
-                          className="bx bxl-dribbble text-2xl text-white hover:text-yellow"
+                          className="bx bxl-github text-2xl text-white hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link
+                        href={profile?.linkedin}
+                        target="_blank"
+                        className="pl-4">
                         <i
                           className="bx bxl-linkedin text-2xl text-white hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link
+                        href={profile?.instagram}
+                        target="_blank"
+                        className="pl-4">
                         <i
                           className="bx bxl-instagram text-2xl text-white hover:text-yellow"
                         ></i>
-                      </a>
+                      </Link>
+                    </div>
+                    <div className="flex absolute bottom-52 left-[30rem]">
+                      <Button
+                        color="gradient"
+                        flat
+                        rounded
+                        auto
+                        onClick={() => {
+                          router.push('/blogs')
+                        }}
+                      >
+                       Browse Blogs
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -499,31 +529,31 @@ const Home = ({ blogs }) => {
                     <div
                       className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
                     >
-                      <a href="/">
+                      <Link href="/">
                         <i
                           className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link href="/" className="pl-4">
                         <i
                           className="bx bxl-twitter text-2xl text-primary hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link href="/" className="pl-4">
                         <i
                           className="bx bxl-dribbble text-2xl text-primary hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link href="/" className="pl-4">
                         <i
                           className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
                         ></i>
-                      </a>
-                      <a href="/" className="pl-4">
+                      </Link>
+                      <Link href="/" className="pl-4">
                         <i
                           className="bx bxl-instagram text-2xl text-primary hover:text-yellow"
                         ></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -749,7 +779,7 @@ const Home = ({ blogs }) => {
               <div
                 className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
               >
-                <a
+                <Link
                   href="/"
                   className="mx-auto transform transition-all hover:scale-105 md:mx-0"
                 >
@@ -757,8 +787,8 @@ const Home = ({ blogs }) => {
                     src="/assets/img/portfolio-apple.jpeg"
                     className="w-full shadow"
                     alt="portfolio image" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/"
                   className="mx-auto transform transition-all hover:scale-105 md:mx-0"
                 >
@@ -766,8 +796,8 @@ const Home = ({ blogs }) => {
                     src="/assets/img/portfolio-stripe.jpeg"
                     className="w-full shadow"
                     alt="portfolio image" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/"
                   className="mx-auto transform transition-all hover:scale-105 md:mx-0"
                 >
@@ -775,8 +805,8 @@ const Home = ({ blogs }) => {
                     src="/assets/img/portfolio-fedex.jpeg"
                     className="w-full shadow"
                     alt="portfolio image" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/"
                   className="mx-auto transform transition-all hover:scale-105 md:mx-0"
                 >
@@ -784,7 +814,7 @@ const Home = ({ blogs }) => {
                     src="/assets/img/portfolio-microsoft.jpeg"
                     className="w-full shadow"
                     alt="portfolio image" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -1118,7 +1148,7 @@ const Home = ({ blogs }) => {
                   ))}
 
 
-                  {/* <a href="/post" className="shadow">
+                  {/* <Link href="/post" className="shadow">
                     <div
                       style={{ backgroundImage: "url(/assets/img/post-02.png)" }}
                       className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -1137,8 +1167,8 @@ const Home = ({ blogs }) => {
                       >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                     </div>
-                  </a> */}
-                  {/* <a href="/post" className="shadow">
+                  </Link> */}
+                  {/* <Link href="/post" className="shadow">
                     <div
                       style={{ backgroundImage: "url(/assets/img/post-03.png)" }}
                       className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -1157,7 +1187,7 @@ const Home = ({ blogs }) => {
                       >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                     </div>
-                  </a> */}
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -1287,23 +1317,23 @@ const Home = ({ blogs }) => {
                   © Copyright 2022. All right reserved, ATOM.
                 </p>
                 <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-                  <a href="/">
+                  <Link href="/">
                     <i
                       className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
                     ></i>
-                  </a>
-                  <a href="/" className="pl-4">
+                  </Link>
+                  <Link href="/" className="pl-4">
                     <i className="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-                  </a>
-                  <a href="/" className="pl-4">
+                  </Link>
+                  <Link href="/" className="pl-4">
                     <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-                  </a>
-                  <a href="/" className="pl-4">
+                  </Link>
+                  <Link href="/" className="pl-4">
                     <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-                  </a>
-                  <a href="/" className="pl-4">
+                  </Link>
+                  <Link href="/" className="pl-4">
                     <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div></>
